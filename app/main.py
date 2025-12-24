@@ -108,7 +108,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 
 if __name__ == "__main__":
     import uvicorn
-
+    load_dotenv()
     uvicorn.run(
         "app.main:app",
         host=settings.api_host,
